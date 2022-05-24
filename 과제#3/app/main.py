@@ -12,6 +12,7 @@ def result():
       result['Name'] = request.form.get('Name')
 
       # 학번
+      result['Student number'] = request.form.get('Student number')
       # 성별
       # 학과
       # 프로그래밍 언어 -> hint) ','.join(list명)을 사용하면 list 안에 있는 항목들이 ','로 나누어져 출력됨.
