@@ -7,3 +7,13 @@ services:
     container_name: hw4c
     ports: 
       - "80:80"
+  jenkins:
+    build: 
+      context: .
+    container_name: jenkins
+    user: root
+    ports:
+      - 8085:8080
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+      - //var/run/docker.sock:/var/run/docker.sock
