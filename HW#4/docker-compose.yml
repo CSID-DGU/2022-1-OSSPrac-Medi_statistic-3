@@ -6,7 +6,7 @@ services:
     image: test
     container_name: test1
     ports: 
-      - "80:80"
+      - "100:100"
   jenkins:
     privileged: true
     build: .
