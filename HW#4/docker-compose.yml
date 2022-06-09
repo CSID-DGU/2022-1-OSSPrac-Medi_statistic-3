@@ -1,4 +1,8 @@
 services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
   jenkins:
     privileged: true
     build: .
