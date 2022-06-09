@@ -3,6 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: test
+    container_name: test1
+    ports: 
+      - "80:80"
   jenkins:
     privileged: true
     build: .
