@@ -3,9 +3,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: yejin0858/week4
+    image: dldydgnl2080/hw4
     container_name: hw4c
   production:
-    image: yejin0858/week4:latest
+    image: dldydgnl2080/hw4:3.0
     ports: 
       - "80:80"
