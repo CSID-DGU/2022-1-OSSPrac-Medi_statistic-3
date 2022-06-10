@@ -1,12 +1,11 @@
 services:
-  jenkins:
-    privileged: true
-    build: .
-    restart: always
-    ports:
-        - "8080:8080"
-    volumes:
-        - './jenkins_home:/var/jenkins_home'
-        - '/var/run/docker.sock:/var/run/docker.sock'
-    environment:
-        TZ: "Asia/Seoul"
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hw4
+    container_name: hw4c
+    ports: 
+      - "80:80"
+    production:
+      image: dldydgnl2080/hw4:3.0
