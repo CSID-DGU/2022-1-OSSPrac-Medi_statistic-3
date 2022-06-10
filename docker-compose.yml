@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hw4
+    container_name: hw4c
+    ports: 
+      - "80:80"
+  production:
+    image: dldydgnl2080/hw4:3.0
