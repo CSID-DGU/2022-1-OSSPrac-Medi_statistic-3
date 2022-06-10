@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     image: dldydgnl2080/hw4
     container_name: hw4c
-    ports: 
-      - "80:80"
   production:
     image: dldydgnl2080/hw4:3.0
+    ports: 
+      - "80:80"
